@@ -50,6 +50,6 @@
 #define JP_PLUS  LS(JP_SCLN) // +
 #define JP_ASTR  LS(JP_COLN) // *
 #define JP_UNDS  LS(JP_BSLS) // _
-#define JP_LT    LS(JP_COMM) // 
+#define JP_LT    LS(JP_COMM) // <
 #define JP_GT    LS(JP_DOT)  // >
 #define JP_QUES  LS(JP_SLSH) // ?
