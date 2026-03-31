@@ -66,7 +66,7 @@
     zip_runtime_input_processor_left: zip_runtime_input_processor_left {
         compatible = "zmk,input-processor-runtime";
         #input-processor-cells = <0>;
-        processor-label = "Left Trackball"; /* ★ 追加 */
+        processor-label = "L-Track"; /* ★ 8文字以内に変更 */
         x-codes = <INPUT_REL_X>;  /* ★ 追加 */
         y-codes = <INPUT_REL_Y>;  /* ★ 追加 */
     };
@@ -74,7 +74,7 @@
     zip_runtime_input_processor_right: zip_runtime_input_processor_right {
         compatible = "zmk,input-processor-runtime";
         #input-processor-cells = <0>;
-        processor-label = "Right Trackball"; /* ★ 追加 */
+        processor-label = "R-Track"; /* ★ 8文字以内に変更 */
         x-codes = <INPUT_REL_X>;  /* ★ 追加 */
         y-codes = <INPUT_REL_Y>;  /* ★ 追加 */
     };
