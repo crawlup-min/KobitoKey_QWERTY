@@ -62,32 +62,12 @@
     };
 };
 
-/ {
-    zip_runtime_input_processor_left: zip_runtime_input_processor_left {
-        compatible = "zmk,input-processor-runtime";
-        #input-processor-cells = <0>;
-        processor-label = "L-Track"; /* ★ 8文字以内に変更 */
-        x-codes = <INPUT_REL_X>;  /* ★ 追加 */
-        y-codes = <INPUT_REL_Y>;  /* ★ 追加 */
-    };
-
-    zip_runtime_input_processor_right: zip_runtime_input_processor_right {
-        compatible = "zmk,input-processor-runtime";
-        #input-processor-cells = <0>;
-        processor-label = "R-Track"; /* ★ 8文字以内に変更 */
-        x-codes = <INPUT_REL_X>;  /* ★ 追加 */
-        y-codes = <INPUT_REL_Y>;  /* ★ 追加 */
-    };
-
-};
-
 &tb_left_listener {
     status = "okay";
     device = <&tb_left>;
 
     input-processors =
             <&sensor_rotation_left>,
-            <&zip_runtime_input_processor_left>,   /* ★ 追加 */
             <&zip_x_scaler 1 30>,
             <&zip_y_scaler 1 15>,
             <&zip_xy_to_scroll_mapper>;
@@ -106,7 +86,6 @@
 
     input-processors =
         <&sensor_rotation_right>,
-        <&zip_runtime_input_processor_right>,   /* ★ 追加 */
         <&zip_temp_layer 4 5000>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
 };
 
