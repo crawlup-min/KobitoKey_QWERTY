@@ -14,7 +14,7 @@ manifest:
     - name: zmk
       remote: cormoran
       revision: v0.3+custom-studio-protocol
-      import: file: app/west.yml
+      import: app/west.yml
 
     # PMW3610 ドライバ（外部モジュール）
     - name: zmk-pmw3610-driver
