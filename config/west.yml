@@ -28,12 +28,12 @@ manifest:
       remote: hsgw
       revision: main
 
-   # LED
+    # LED
     - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
       revision: v0.3
 
-   # ★ DYA Studioモジュール
+    # ★ DYA Studioモジュール
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
