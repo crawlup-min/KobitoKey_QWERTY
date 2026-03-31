@@ -13,7 +13,7 @@ manifest:
     # ZMK 本体。★ 公式zmkfirmwareからcormoranフォークに切り替え
     - name: zmk
       remote: cormoran
-      revision: v0.3+custom-studio-protocol
+      revision: v0.3-branch+dya
       import: app/west.yml
 
     # PMW3610 ドライバ（外部モジュール）
