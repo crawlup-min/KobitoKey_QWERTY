@@ -63,15 +63,18 @@
 };
 
 / {
-    zip_runtime_input_processor_right: zip_runtime_input_processor_right {
-        compatible = "zmk,input-processor-runtime";
-        #input-processor-cells = <0>;
-    };
-
     zip_runtime_input_processor_left: zip_runtime_input_processor_left {
         compatible = "zmk,input-processor-runtime";
         #input-processor-cells = <0>;
+        processor-label = "Left Trackball"; /* ★ 追加 */
     };
+
+    zip_runtime_input_processor_right: zip_runtime_input_processor_right {
+        compatible = "zmk,input-processor-runtime";
+        #input-processor-cells = <0>;
+        processor-label = "Right Trackball"; /* ★ 追加 */
+    };
+
 };
 
 &tb_left_listener {
